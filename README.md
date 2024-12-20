@@ -121,15 +121,56 @@ Para la calibración del User Frame del _workobject_ con el robot real se usó e
 
 ## __4. Lógica de programación__
 
-### __4.1 Funciones utilizadas:__
+### __4.1 Diagrama de flujo:__
 
-### __4.2 Diagrama de flujo:__
 
-### __4.3 Programa en RAPID:__
+
+### __4.2 Programa en RAPID:__
+
+```rapid
+! Proceso main() en RAPID
+PROC main()
+        WHILE (TRUE) DO             ! Mantiene la rutina en bucle, siempre pendiente
+                                    ! de las entradas digitales
+            IF TestDI(DI_01) THEN   ! Si el botón 1 se oprime entonces dibuje el logotipo
+                SetDO DO_02,0;      ! Apaga testigo 2 (indicador de estado de 
+                                    ! mantenimiento)
+                Path_10;            ! Va a posición de HOME definida por usuario
+                SetDO DO_01,1;      ! Enciende testigo 1 (indicador de estado de dibujo)
+                Path_20;            ! Se acerca un punto de aproximación y
+                                    ! dibuja la casita roja de Davivienda
+                Path_30;            ! Dibuja letra D de Davivienda
+                Path_40;            ! Dibuja letra A de Davivienda
+                Path_50;            ! Dibuja letra V de Davivienda
+                Path_60;            ! Dibuja letra I de Davivienda
+                Path_70;            ! Dibuja letra V de Davivienda
+                Path_80;            ! Dibuja letra I de Davivienda
+                Path_90;            ! Dibuja letra E de Davivienda
+                Path_100;           ! Dibuja letra N de Davivienda
+                Path_110;           ! Dibuja letra D de Davivienda
+                Path_120;           ! Dibuja letra A de Davivienda
+                Path_130;           ! Se devuelve a al punto de aproximación
+                SetDO DO_01,0;      ! Apaga testigo 1 (indicador de estado de dibujo)
+                Path_10;            ! Regresa a posición de HOME definida por usuario
+            ELSEIF TestDI(DI_02) THEN   ! Si el botón 2 se oprime entonces va a una 
+                                        ! posición de mantenimiento
+                SetDO DO_02,1;      ! Enciende testigo 2 (indicador de estado de 
+                                    ! mantenimiento)
+                Path_140;           ! Va a posición de mantenimiento
+            ENDIF
+        ENDWHILE
+    ENDPROC
+```
+
+Para ver el programa completo, en la carpeta [*RobotStudio/RAPID*](./RobotStudio/RAPID) se encuentran los archivos de RAPID.
 
 ## __5. Videos de implementación__
 
 ### __5.1 Simulaciones en RobotStudio:__
 
+- Video: 
+
 ### __5.2 Implementación en robot real:__
+
+- Video:
 
