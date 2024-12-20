@@ -2,7 +2,7 @@
 
 ## Autores
 
-Johan Lopez - [@ElJoho](https://github.com/ElJoho)
+Johan López - [@ElJoho](https://github.com/ElJoho)
 
 Christian Cuestas - [@ChrisCuestas](https://github.com/ChrisCuestas)
 
@@ -123,7 +123,7 @@ Para la calibración del User Frame del _workobject_ con el robot real se usó e
 
 ### __4.1 Diagrama de flujo:__
 
-
+<img src="./Imagenes/DiagramaFlujoRAPID.png" alt="Confirguración de la estación en RobotStudio" width="450">
 
 ### __4.2 Programa en RAPID:__
 
@@ -162,7 +162,7 @@ PROC main()
     ENDPROC
 ```
 
-Para ver el programa completo, en la carpeta [*RobotStudio/RAPID*](./RobotStudio/RAPID) se encuentran los archivos de RAPID.
+Para ver el programa completo, en la carpeta [*RobotStudio/RAPID*](./RobotStudio/RAPID) se encuentran los archivos de RAPID y el 'Module1' completo en un archivo _.txt_.
 
 ## __5. Videos de implementación__
 
