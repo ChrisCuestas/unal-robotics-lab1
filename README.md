@@ -22,7 +22,9 @@ La herramienta tiene una inclinación de 30° respecto al eje Z del marco asocia
 
 Para mayor detalle, en la carpeta [*Herramienta*](./Herramienta) se encuentran los archivos de inventor con los que se diseñó y ensambló el modelo digital de la herramienta, los archivos STL para su respectiva impresión aí como también  los archivos SAT para exportar el modelo a RobotStudio.
 
-## Diseño de tablero
+## Diseño de tablero físico
+
+__*AÑADIR INFO*__
 
 ## Diseño de logo de *Davivienda*
 
@@ -33,3 +35,11 @@ Para facilitar el proceso de creación de paths, se diseñó un modelo digital e
 Para mayor detalle, en la carpeta [*Logo*](./Logo) se encuentran los archivos de inventor con los que se diseñó el logotipo y el archivo SAT para exportar el modelo a RobotStudio.
 
 ## Diseño de estación en RobotStudio
+
+Teniendo los modelos de la herramienta y el logotipo, se creó una estación en RobotStudio, importando un robot IRB 140 de la librería y los dos archivos SAT para la herramienta y el logotipo.
+
+La configuración de la estación se muestra en la siguiente imagen:
+
+<img src="./Imagenes/EstacionRS-3D.jpg" alt="Confirguración de la estación en RobotStudio" width="450">
+
+Para mayor detalle, en la carpeta [*RobotStudio*](./RobotStudio) se encuentran los archivos de la estación.
