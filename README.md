@@ -2,9 +2,9 @@
 
 ## Autores
 
-Johan -
+Johan Lopez - [@ElJoho](https://github.com/ElJoho)
 
-Christian Cuestas - [@chriscuestas](https://github.com/ChrisCuestas)
+Christian Cuestas - [@ChrisCuestas](https://github.com/ChrisCuestas)
 
 ## Contexto:
 
