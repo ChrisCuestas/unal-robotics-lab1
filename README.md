@@ -8,7 +8,14 @@ Christian Cuestas - [@chriscuestas](https://github.com/ChrisCuestas)
 
 ## Contexto:
 
-Se propone hacer la publicidad de una marca en un producto virtual. Se 
+Se propone dibujar con el manipulador industrial de *ABB IRB 140* el nombre de la marca __*Davivienda*__, reconocida por sus destacadas campañas de marketing, junto con su respectivo logotipo de la casita roja.
 
-Es decir, sobre una superficie plana bien sea redonda o rectangular (WorkObject), se debe dibujar el logotipo y escribir el nombre de una empresa reconocida por sus destacadas campa˜nas
-de marketing. Adem´as de esto, se deben colocar las iniciales de los nombres de los integrantes del equipo.
+## Diseño de herramienta
+
+Se requirió el diseño de una herramienta para acoplar al manipulador. Esta herramienta fue pensada para ser impresa en 3D y capaz de sostener un marcador borrable.
+
+A continuación se presentan algunas imágenes del modelo 3D de la herramienta:
+
+__INSERTAR IMAGENES_
+
+Para mayor detalle, en la carpeta [*Herramienta*](./Herramienta) se encuentran los archivos de inventor con los que se diseñó y ensambló el modelo 3D de la herramienta, los archivos STL para su respectiva impresión aí como también  los archivos SAT para exportar el modelo a RobotStudio.
