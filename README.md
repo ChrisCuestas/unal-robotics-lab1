@@ -62,7 +62,6 @@ Los datos relevantes del _tooldata_ para la estación en RobotStudio fueron los 
 |-----------------------------------------------|-----------------------------|
 | Masa (en kg)                                  | 0.155                       |
 | Centro de gravedad (en mm)                    | [19.89 -0.01 58.09]         |
-|
 
 Para la calibración de la herramienta con el robot real se usó el método de 3 puntos y elongación a lo largo de Z con lo que obtuvimos los siguientes datos para el _tooldata_:
 
@@ -70,7 +69,6 @@ Para la calibración de la herramienta con el robot real se usó el método de 3
 |----------------------------------------------|-----------------------------|
 | Posición del TCP (en mm)                     | [59.2323, 42.9937, 166.388] |
 | Orientación del marco en el TCP (cuaternios) | [0.720085, -0.231965, 0.62465, 0.200518]|
-|
 
 Al momento de comprobar si la calibración fue correcta mediente _jogging_ en modo reorientación, pudimos observar que la posición del TCP fue bastante precisa (según datos mostrados por el controlador, la precisión fue de +/-3mm aprox.)
 
@@ -86,7 +84,6 @@ Por tal razón, decidimos definir el _tooldata_ con el que vamos a trabajar de l
 | Posición del TCP (en mm)                      | [59.2323, 42.9937, 166.388]      |
 | Orientación del marco en el TCP (en RPY)      | [0°, 30°, 0°]               |
 | Orientación del marco en el TCP ( cuaternios) | [0.96593, -0.00001, 0.25882, 0.00000]|
-|
 
 Con esto, sabremos que aunque la orientación del marco en el TCP es igual tanto en la simulación como en la realidad, pero que la forma como queda orientada la herramienta difiere entre simulación y la realidad. Pero dicha diferencia no afectaría en la escritura sobre el tablero, así que decidimos simplemente aceptar esta discrepancia y proseguir.
 
@@ -107,7 +104,6 @@ Los datos relevantes y finales del _workobject_ para la estación en RobotStudio
 | Posición del User Frame (en mm)                   | [-20, -80, 0] |
 | Orientación del marco del User Frame (en RPY)     | [0°, 0°, 0°]  |
 | Orientación del marco del User Frame (cuaternios) | [1, 0, 0, 0]  |
-|
 
 - Para escribir sobre un plano inclinado 30° respecto a la horizontal:
 
@@ -120,7 +116,6 @@ Los datos relevantes y finales del _workobject_ para la estación en RobotStudio
 | Posición del Object Frame (en mm)                   | [-20, -80, 0] |
 | Orientación del marco del User Object (en RPY)     | [0°, 0°, 0°]  |
 | Orientación del marco del User Object (cuaternios) | [1, 0, 0, 0]  |
-|
 
 Para la calibración del User Frame del _workobject_ con el robot real se usó el método de 3 puntos cada vez que instalaba el tablero. Utilizamos los mismos datos del Object Frame para garantizar que el dibujo quede dentro del tablero real, y así corregir las dicrepancias con las dimensiones del modelo CAD del logo en relieve.
 
